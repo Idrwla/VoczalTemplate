@@ -1,0 +1,27 @@
+input{
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+input.warn{
+  border-left: #d40000;
+  border-left-width: 4px;
+  border-left-style: solid;
+  background-color: #ff8080;
+}
+select{
+  padding-left: 10px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+form{
+  border-style: solid;
+  border-color: purple;
+  border-width: 2px;
+  padding: 25px 35px;
+}
+form.warn{
+  border-color: #d40000;
+}
+button{
+  left: 20%;
+}

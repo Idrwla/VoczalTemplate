@@ -1,0 +1,23 @@
+<h3>Add railway carriage</h3>
+<form [class.warn]="invalidState || invalidName || invalidNUmber">
+  <div>
+    <label for="numberOfVagon">Номер вагона</label><br>
+    <input [class.warn]="invalidNUmber" id="numberOfVagon" matInput [(ngModel)]="model.numberOfVagon" name="numberOfVagon" required>
+  </div>
+  <div>
+    <label for="nameOfVagon">Наименование вагона</label><br>
+    <input [class.warn]="invalidName" id="nameOfVagon" matInput [(ngModel)]="model.nameOfVagon" name="nameOfVagon" maxlength="50" required>
+  </div>
+  <div>
+    <label for="state">Состояние вагона</label><br>
+    <select [class.warn]="invalidState" id="state" [(ngModel)]="model.stateOfVagon" name="state" required>
+      <option value="Рабочее">Рабочее</option>
+      <option value="Неисправное">Неисправное</option>
+      <option value="В ремонте">В ремонте</option>
+    </select>
+  </div>
+  <div>
+    <button mat-raised-button (click)="submit()" color="primary" type="submit">Добавить</button>
+  </div>
+
+</form>
